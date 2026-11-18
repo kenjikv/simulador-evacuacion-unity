@@ -19,6 +19,11 @@ public class IndicacionHUD : MonoBehaviour
 
     public void Ocultar()
     {
-        texto.enabled = false;
+        // Al salir de Play, Unity destruye los objetos en cualquier orden:
+        // si el texto ya no existe, no hay nada que ocultar.
+        if (texto != null)
+        {
+            texto.enabled = false;
+        }
     }
 }

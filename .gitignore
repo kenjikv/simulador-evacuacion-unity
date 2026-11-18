@@ -139,3 +139,6 @@ crashlytics-build.properties
 
 # macOS
 .DS_Store
+
+# Profiler captures saved by the Profiler window
+/ProfilerCaptures/
